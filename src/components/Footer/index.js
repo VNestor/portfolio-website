@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
+import { FooterSection } from "./FooterElements";
 
-export class Footer extends Component {
-  render() {
-    return <div>Footer</div>;
-  }
-}
+const Footer = () => {
+  return (
+    <FooterSection>Victor Nestor © {new Date().getFullYear()}</FooterSection>
+  );
+};
 
 export default Footer;

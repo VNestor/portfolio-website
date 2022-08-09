@@ -5,20 +5,13 @@ export const NavHeader = styled.header``;
 
 export const Nav = styled.nav`
   background: rgba(11, 25, 40, 0.8);
-  font-size: clamp(1rem, 1vw, 1.5rem);
-  position: fixed;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  top: 0;
+  position: fixed;
   min-height: 10vh;
   width: 100%;
   z-index: 10;
-
-  @media screen and (max-width: 650px) {
-    display: none;
-  }
 `;
 
 export const NavH1 = styled.h1`
@@ -27,17 +20,25 @@ export const NavH1 = styled.h1`
   margin: auto 5vh;
 `;
 
-export const NavMenu = styled.ul`
+export const NavMenu = styled.div`
   display: flex;
-  flex: 1 1 40rem;
-  justify-content: space-between;
-  margin-right: 5vh;
-  align-items: center;
-  list-style: none;
+  position: absolute;
+  flex-direction: row;
+  right: 1rem;
+  margin: auto;
+  @media screen and (max-width: 650px) {
+    display: none;
+  }
 `;
 
 export const NavLink = styled(NLink)`
   color: #a9c5e6;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  cursor: pointer;
+  height: 100%;
 
   &.active {
     color: #fae009;
@@ -51,10 +52,12 @@ export const NavLink = styled(NLink)`
 
 export const Resume = styled.button`
   border: 1px solid #a9c5e6;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 1vh 1vw;
   color: #a9c5e6;
   background: #0b1928;
+  margin-right: 5vh;
+  line-height: 0;
 
   &:hover {
     transition: all 0.2s ease-in-out;
