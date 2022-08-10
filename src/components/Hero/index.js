@@ -15,7 +15,7 @@ import { GrLinkedin, GrGithub } from "react-icons/gr";
 const Hero = () => {
   return (
     <>
-      <HeroSection>
+      <HeroSection id="hero">
         <HeroContent>
           <HeroH1>
             <Typewriter

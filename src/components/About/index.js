@@ -12,7 +12,7 @@ import {
 const About = () => {
   return (
     <>
-      <AboutSection>
+      <AboutSection id="about">
         <AboutH1>About.</AboutH1>
         <AboutWrapper>
           <AboutH2>Education</AboutH2>

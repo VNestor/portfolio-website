@@ -25,6 +25,7 @@ const Experience = () => {
       id: 1,
       name: "Fruces Juice Bar",
       img: fruces,
+      alt: "Capture of Fruces website.",
       description:
         "Developed company website; increasing online presence, site traffic, and reach to other platforms.",
       techStack: [
@@ -45,6 +46,7 @@ const Experience = () => {
       id: 1,
       name: "AWS Bookstore",
       img: aws_store,
+      alt: "Capture of AWS Bookstore website.",
       description:
         "Full-stack web store that allows users to view, purchase, and add their favorite books to the catalog.",
       techStack: [
@@ -69,6 +71,7 @@ const Experience = () => {
       id: 2,
       name: "Spoofy Music Application",
       img: spoofy,
+      alt: "Capture of Spoofy website.",
       description:
         "Spotify clone that allows a user to find, listen, like, and sing along to a song from their favorite artists.",
       techStack: [
@@ -90,6 +93,7 @@ const Experience = () => {
       id: 3,
       name: "Database Application",
       img: db_app,
+      alt: "Capture of database application.",
       description:
         "Desktop CRUD application that mimics the enrollment process of a new/transferring student into a database.",
       techStack: ["Java", "SQL", "Swing", "Derby", "Netbeans"],
@@ -99,6 +103,7 @@ const Experience = () => {
     {
       id: 4,
       name: "Stock Market Web Application",
+      alt: "Capture of stock market website.",
       img: stock_market,
       description:
         "Stock market web application to view quick market stats, financial news, and track any stock of your choice.",
@@ -116,7 +121,7 @@ const Experience = () => {
   ];
   return (
     <>
-      <ExperienceSection>
+      <ExperienceSection id="experience">
         <ExperienceH1>Experience.</ExperienceH1>
         <ExperienceH2>Professional</ExperienceH2>
         <ExperienceWrapper>
@@ -124,7 +129,7 @@ const Experience = () => {
             {Object.keys(work).map((key, index) => {
               return (
                 <ExperienceCard key={index}>
-                  <img src={work[index].img} />
+                  <img src={work[index].img} alt={work[index].alt} />
                   <CardInfoContainer>
                     <ExperienceH3>{work[index].name}</ExperienceH3>
                     <p>{work[index].description}</p>
@@ -150,7 +155,7 @@ const Experience = () => {
             {Object.keys(projects).map((key, index) => {
               return (
                 <ExperienceCard key={index}>
-                  <img src={projects[index].img} />
+                  <img src={projects[index].img} alt={projects[index].alt} />
                   <CardInfoContainer>
                     <ExperienceH3>{projects[index].name}</ExperienceH3>
                     <p>{projects[index].description}</p>
@@ -177,7 +182,7 @@ const Experience = () => {
                         <GoLinkExternal color="#0b1928" size={30} />
                       </a>
                     ) : (
-                      <a />
+                      <div />
                     )}
                   </CardInfoContainer>
                 </ExperienceCard>

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link as NLink } from "react-router-dom";
+import { Link as SLink } from "react-scroll";
+import { FaBars } from "react-icons/fa";
 
 export const NavHeader = styled.header``;
 
@@ -26,8 +28,42 @@ export const NavMenu = styled.div`
   flex-direction: row;
   right: 1rem;
   margin: auto;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 850px) {
     display: none;
+  }
+`;
+
+export const Bars = styled(FaBars)`
+  display: none;
+  color: #a9c5e6;
+
+  @media screen and (max-width: 850px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 70%);
+    font-size: 3rem;
+    cursor: pointer;
+  }
+`;
+
+export const ScrollLink = styled(SLink)`
+  color: #a9c5e6;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  cursor: pointer;
+  height: 100%;
+
+  &.active {
+    color: #fae009;
+    text-decoration: none;
+  }
+
+  a {
+    color: inherit;
   }
 `;
 
@@ -63,5 +99,25 @@ export const Resume = styled.button`
     transition: all 0.2s ease-in-out;
     color: #0b1928;
     background: #a9c5e6;
+  }
+`;
+
+export const LinkTo = styled.div`
+  color: #a9c5e6;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  cursor: pointer;
+  height: 100%;
+
+  &.active {
+    color: #fae009;
+    text-decoration: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 `;

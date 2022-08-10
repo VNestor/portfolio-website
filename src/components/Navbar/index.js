@@ -3,23 +3,43 @@ import {
   NavHeader,
   Nav,
   NavH1,
-  NavLink,
+  ScrollLink,
   NavMenu,
   Resume,
+  LinkTo,
+  Bars,
 } from "./NavbarElements";
+import PDF from "../../assets/Victor Nestor Website Resume.pdf";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <NavHeader>
       <Nav>
         <NavH1>Victor Nestor</NavH1>
         <NavMenu>
-          <NavLink to="about">About</NavLink>
-          <NavLink to="experience">Experience</NavLink>
-          <NavLink to="contact">Contact</NavLink>
-          <NavLink to="blog">Blog</NavLink>
-          <Resume>Resume</Resume>
+          <ScrollLink to="about" smooth={true}>
+            About
+          </ScrollLink>
+          <ScrollLink to="experience" smooth={true}>
+            Experience
+          </ScrollLink>
+          <ScrollLink to="contact" smooth={true}>
+            Contact
+          </ScrollLink>
+          <LinkTo>
+            <a
+              href="https://vnestor.github.io/personal-blog/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Blog
+            </a>
+          </LinkTo>
+          <a href={PDF} target="_blank" rel="noreferrer">
+            <Resume>Resume</Resume>
+          </a>
         </NavMenu>
+        <Bars onClick={toggle} />
       </Nav>
     </NavHeader>
   );

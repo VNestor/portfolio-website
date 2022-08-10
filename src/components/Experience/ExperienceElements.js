@@ -7,9 +7,9 @@ export const ExperienceSection = styled.section`
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  padding: 0.5rem calc((95vw - 2000px) / 2);
+  padding: 10vh calc((95vw - 2000px) / 2);
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 850px) {
     display: block;
     margin: auto;
     justify-items: start;
@@ -21,9 +21,9 @@ export const ExperienceWrapper = styled.div`
   text-align: left;
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 2rem;
+  margin: 2rem 2vh;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 850px) {
     text-align: center;
     display: flex;
     margin: auto;
@@ -63,7 +63,7 @@ export const ExperienceUL = styled.ul`
     padding: 0.5vh 0.5vw;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 850px) {
     display: block;
     justify-items: start;
     justify-content: center;
@@ -90,7 +90,7 @@ export const ExperienceCard = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 850px) {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -106,7 +106,7 @@ export const CardWrapper = styled.div`
   flex-wrap: wrap;
   justifying-content: flex-start;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 850px) {
     text-align: center;
     display: flex;
     flex-direction: column;

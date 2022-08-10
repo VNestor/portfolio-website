@@ -7,7 +7,7 @@ export const AboutSection = styled.section`
   overflow: hidden;
   color: #a9c5e6;
   text-align: center;
-  padding: 0 calc((95vw - 1000px) / 2);
+  padding: 10vh calc((95vw - 1000px) / 2);
 `;
 
 export const AboutH1 = styled.h1`
