@@ -10,7 +10,6 @@ import {
   FormModal,
   ModalIcon,
 } from "./ContactElements";
-import { Modal } from "bootstrap";
 
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);
