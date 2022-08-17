@@ -8,6 +8,10 @@ export const ContactSection = styled.section`
   color: #a9c5e6;
   text-align: center;
   padding: 10vh calc((95vw - 1000px) / 2);
+
+  @media screen and (max-width: 850px) {
+    padding: 12vh calc((95vw - 1000px) / 2);
+  }
 `;
 
 export const ContactceH1 = styled.h1`
@@ -79,7 +83,7 @@ export const FormContainer = styled.div`
 export const FormButton = styled.button`
   border: 1px solid #a9c5e6;
   border-radius: 5px;
-  padding: 1vh 1vw;
+  padding: 1vh 4vw;
   color: #a9c5e6;
   background: #0b1928;
   margin-top: 1rem;

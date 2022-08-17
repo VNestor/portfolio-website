@@ -39,6 +39,7 @@ const Navbar = ({ toggle }) => {
             <Resume>Resume</Resume>
           </a>
         </NavMenu>
+
         <Bars onClick={toggle} />
       </Nav>
     </NavHeader>

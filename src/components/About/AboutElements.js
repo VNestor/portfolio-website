@@ -8,6 +8,10 @@ export const AboutSection = styled.section`
   color: #a9c5e6;
   text-align: center;
   padding: 10vh calc((95vw - 1000px) / 2);
+
+  @media screen and (max-width: 850px) {
+    padding: 12vh calc((95vw - 1000px) / 2);
+  }
 `;
 
 export const AboutH1 = styled.h1`

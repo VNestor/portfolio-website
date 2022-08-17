@@ -71,7 +71,7 @@ const Contact = () => {
           <input type="text" placeholder="Subject" name="subject" required />
 
           <label>Message: </label>
-          <textarea rows="4" placeholder="Message" name="message" require />
+          <textarea rows="5" placeholder="Message" name="message" require />
           <FormButton type="submit" value="Send">
             Send
           </FormButton>

@@ -10,6 +10,7 @@ export const ExperienceSection = styled.section`
   padding: 10vh calc((95vw - 2000px) / 2);
 
   @media screen and (max-width: 850px) {
+    padding: 12vh calc((95vw - 2000px) / 2);
     display: block;
     margin: auto;
     justify-items: start;
@@ -21,14 +22,14 @@ export const ExperienceWrapper = styled.div`
   text-align: left;
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 2vh;
+  margin: 0 1.5vw;
 
   @media screen and (max-width: 850px) {
     text-align: center;
     display: flex;
-    margin: auto;
+    margin: 2vh 9vw;
     flex-direction: column;
-    width: 50vw;
+    width: 75vw;
   }
 `;
 
@@ -40,7 +41,7 @@ export const ExperienceH1 = styled.h1`
 
 export const ExperienceH2 = styled.h2`
   text-align: left;
-  margin: 5vh;
+  margin: 4vh 4vw;
   font-size: clamp(2rem, 2.5vw, 3rem);
 `;
 

@@ -11,9 +11,13 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  min-height: 10vh;
+  height: 10vh;
   width: 100%;
   z-index: 10;
+
+  @media screen and (max-width: 850px) {
+    height: 12vh;
+  }
 `;
 
 export const NavH1 = styled.h1`
@@ -26,10 +30,27 @@ export const NavMenu = styled.div`
   display: flex;
   position: absolute;
   flex-direction: row;
-  right: 1rem;
-  margin: auto;
+  right: 1vw;
+  font-size: 1rem;
   @media screen and (max-width: 850px) {
     display: none;
+  }
+`;
+
+export const Resume = styled.button`
+  border: 1px solid #a9c5e6;
+  font-size: 1rem;
+  border-radius: 2px;
+  padding: 12px;
+  color: #a9c5e6;
+  background: #0b1928;
+  margin-right: 2vw;
+  line-height: 0;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #0b1928;
+    background: #a9c5e6;
   }
 `;
 
@@ -83,22 +104,6 @@ export const NavLink = styled(NLink)`
 
   a {
     color: inherit;
-  }
-`;
-
-export const Resume = styled.button`
-  border: 1px solid #a9c5e6;
-  border-radius: 2px;
-  padding: 1vh 1vw;
-  color: #a9c5e6;
-  background: #0b1928;
-  margin-right: 5vh;
-  line-height: 0;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    color: #0b1928;
-    background: #a9c5e6;
   }
 `;
 
